@@ -9,6 +9,9 @@ import GmailIcon from "../components/Gmail.astro"
 import SectionContainer from "../components/SectionContainer.astro";
 import VisualIcon from "../components/Visual.astro";
 import Projects from "../components/Projects.astro";
+import AboutMe from "../components/AboutMe.astro";
+import TitleSection from "../components/TitleSection.astro";
+import ProfileCheck from "../components/ProfileCheck.astro";
 ---
 
 
@@ -28,7 +31,7 @@ import Projects from "../components/Projects.astro";
 					target ="_blank"
 					rel="noopener"
 					class="flex justify-center items-center"> 
-				<Badge> Disponible para trabajarrrrrrrrrrr =) </Badge>
+				<Badge> Disponible para trabajar </Badge>
 				</a>
 			</h1>
 			<h2 class="text-xl lg:text-3xl text-wrap max-w-[700px]">
@@ -58,11 +61,18 @@ import Projects from "../components/Projects.astro";
 			</h2>
 			<Projects />
 
-			
-
-
-
 		</SectionContainer>
+
+		<SectionContainer class="py-20" id="sobre-mi">
+			<TitleSection>
+			  <ProfileCheck class="size-8" />
+			  Sobre mí
+			</TitleSection>
+			<AboutMe />
+		  </SectionContainer>
+
+
+
 	</main>
 </Layout>
 
